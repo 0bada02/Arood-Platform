@@ -1,0 +1,17 @@
+language: python
+python:
+- '3.6'
+install:
+- pip install -r requirements.txt
+- pip install pytest
+- pip install codecov
+- pip install pytest-cov
+script:
+- py.test --cov=aruudy/poetry tests/*_u.py
+after_success:
+- codecov
+deploy:
+  provider: pypi
+  user: __token__
+  password:
+    secure: c3ysKL2ErJecII2qDSp0ve+VEHFsTyyQzPXobsgpwPdMMmuw5Y0iF3CQ/hi6RTAokx4RGRo8LAkVopyG0eFieNEHO8a0CP5vSN3bUiZ840nlK1DeOYwVFlEyw533VcTreOoCwvTUGGsyVy1k98tUNN20cnyI6k8Z5GPHSdMGfKVl04WKWo+pXIcDNi+Y6jdk8QmYm/Lze+rFrbqIg6HjWfbCtBAHXDz0yPMMkOuFNRCaXLjPidfAT5nrHNQC8WgCSm7Mr8jysACvIIVjj8ws2JHsNTcpZztUeiO997tLpBkzw2rfwTbI6oS2pK1sh3nLn/sNKc8MR4O5JfmvhRKvcLHszuRN2Aud+TItlEaHNVegR3/+Mb4NPPESrURTVgdiSf+5bTX/8AoxYyBiqP9ruQm7KBO0dFBeY4ex5440vP//ZbTXJqJnmefFE3DQE0y3wS/PpstK5SdlT5+Sh06WnhSBXtw8vZ5wwjJYWf336rEoJmJBKaVwMhGRXdhPRHFE9TGRSKOapfPmO7In/oqDrbC95IAzaEPbLinrPt9+VVxeUxhUu09Nb1J3X/SFIR1mW0ekj06ktuwllKqlP+DGcCaxYizap9FyzYM0ecTn2Wtp3HHIpUZKBKAxkbNCx528flvhtvurmc/HQZITsBKR6qVkVk6gmivVVVljXR7ZE2Y=

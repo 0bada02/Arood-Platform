@@ -1,0 +1,119 @@
+.poetry-input {
+    width: 80%;
+    height: 100px;
+    margin: 20px auto;
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.loading-circle {
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #4CAF50;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.page2-container {
+    font-family: 'Jazeera', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: url('/frontend/public/logos/background1.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header {
+    background-color: rgba(80, 45, 30, 0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.poetry-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.analysis-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+
+.results {
+    width: 40%;
+}
+
+.box {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.chart {
+    width: 40%;
+    text-align: center;
+}
+
+.chart-bar {
+    background-color: #ccc;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.chart-fill {
+    height: 100%;
+    width: 96%;
+    background-color: #4CAF50;
+    transition: width 1s;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    color: white;
+    background: linear-gradient(145deg, #3e8e41, #45a049);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px #2b5e34;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #36a852;
+    box-shadow: 0 4px #2b5e34;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+}

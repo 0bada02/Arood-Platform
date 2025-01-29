@@ -1,0 +1,29 @@
+.poetry-form {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.poetry-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    direction: rtl;
+}
+
+.analyze-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.analyze-button:hover {
+    background-color: #45a049;
+}

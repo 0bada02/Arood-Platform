@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  python-api:
+    build:
+      context: ./python-api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./python-api:/app
+      - shared_models:/app/models
+    restart: always
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - python-api
+    volumes:
+      - shared_models:/app/models
+    restart: always
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  shared_models:
+    driver: local
