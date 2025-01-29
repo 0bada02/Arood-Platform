@@ -1,6 +1,6 @@
 # Arood Platform
 
-[![Demo](https://img.shields.io/badge/Demo-YouTube-FF0000?style=social&logo=youtube)](https://www.youtube.com/watch?v=9bsCSzAySrY)
+[![Demo](https://img.shields.io/badge/Demo-YouTube-FF0000?style=social&logo=youtube)](https://www.youtube.com/watch?v=HSavBMVlTGI)
 
 Arabic poetry analysis and generation. 
 <p align = 'center'>
