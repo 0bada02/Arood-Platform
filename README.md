@@ -2,9 +2,7 @@
 
 [![Demo](https://img.shields.io/badge/Demo-YouTube-FF0000?style=social&logo=youtube)](https://www.youtube.com/watch?v=9bsCSzAySrY)
 
-
 Arabic poetry analysis and generation. 
-
 <p align = 'center'>
 <img src='https://raw.githubusercontent.com/0bada02/Arood-Platform/master/Arood.png' width='300px' alt='logo for Arood'/>
 </p>
